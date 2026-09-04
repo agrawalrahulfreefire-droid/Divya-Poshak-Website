@@ -74,6 +74,8 @@ tailwind.config = {
 
   /* Product card */
   .card{transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
+  .product-photo{width:100%;height:100%;object-fit:contain;display:block}
+
   .card:hover{transform:translateY(-8px);box-shadow:0 30px 60px -20px rgba(82,16,25,.35)}
   .card .visual{transition:transform .7s ease}
   .card:hover .visual{transform:scale(1.06)}
@@ -509,27 +511,19 @@ tailwind.config = {
 <script>
 /* ---------- Products ---------- */
 const products = [
-  {id:1,name:'Peacock Zari Velvet Poshak',cat:'gopal',price:849,old:1099,tag:'Bestseller',top:'linear-gradient(160deg,#14b8a6,#0f766e)',skirt:'linear-gradient(180deg,#2563eb,#1e3a8a 70%,#0f172a)',bg:'from-sky-100 to-indigo-100',sizes:'0–8'},
-  {id:2,name:'Gulabi Gota Patti Lehenga Set',cat:'radha',price:1499,old:1899,tag:'Jodi Set',top:'linear-gradient(160deg,#fb7185,#be123c)',skirt:'linear-gradient(180deg,#f472b6,#9d174d 70%,#500724)',bg:'from-pink-100 to-rose-100',sizes:'2–8'},
-  {id:3,name:'Kesari Silk Dhoti & Angavastra',cat:'ganesh',price:699,old:899,tag:'New',top:'linear-gradient(160deg,#fbbf24,#d97706)',skirt:'linear-gradient(180deg,#f59e0b,#c2410c 70%,#7c2d12)',bg:'from-amber-100 to-orange-100',sizes:'3–10'},
-  {id:4,name:'Lal Chunri Mata Poshak Set',cat:'mata',price:1199,old:null,tag:'Navratri',top:'linear-gradient(160deg,#ef4444,#991b1b)',skirt:'linear-gradient(180deg,#dc2626,#7f1d1d 70%,#450a0a)',bg:'from-red-100 to-rose-100',sizes:'4–12'},
-  {id:5,name:'Moti Kundan Pearl Poshak',cat:'gopal',price:999,old:1299,tag:'Premium',top:'linear-gradient(160deg,#fefce8,#e5e7eb)',skirt:'linear-gradient(180deg,#fdf4ff,#c4b5fd 70%,#6d28d9)',bg:'from-violet-100 to-purple-100',sizes:'0–6'},
-  {id:6,name:'Vrindavan Green Banarasi Set',cat:'radha',price:1799,old:2199,tag:'Handloom',top:'linear-gradient(160deg,#a3e635,#4d7c0f)',skirt:'linear-gradient(180deg,#22c55e,#166534 70%,#052e16)',bg:'from-lime-100 to-emerald-100',sizes:'3–8'},
-  {id:7,name:'Mayur Pankh Holi Poshak',cat:'gopal',price:749,old:949,tag:'Festive',top:'linear-gradient(160deg,#fde68a,#f97316)',skirt:'linear-gradient(180deg,#f472b6,#8b5cf6 50%,#0ea5e9)',bg:'from-fuchsia-100 to-sky-100',sizes:'0–8'},
-  {id:8,name:'Modak Motif Ganpati Poshak',cat:'ganesh',price:899,old:null,tag:'Chaturthi',top:'linear-gradient(160deg,#fca5a5,#dc2626)',skirt:'linear-gradient(180deg,#fbbf24,#b45309 70%,#78350f)',bg:'from-yellow-100 to-red-100',sizes:'3–12'},
+  {id:1,name:'Peacock Zari Velvet Poshak',cat:'gopal',price:849,old:1099,tag:'Bestseller',image:'images/product-1.jpeg',bg:'from-sky-100 to-indigo-100',sizes:'0–8'},
+  {id:2,name:'Gulabi Gota Patti Lehenga Set',cat:'radha',price:1499,old:1899,tag:'Jodi Set',image:'images/product-2.jpeg',bg:'from-pink-100 to-rose-100',sizes:'2–8'},
+  {id:3,name:'Kesari Silk Dhoti & Angavastra',cat:'ganesh',price:699,old:899,tag:'New',image:'images/product-3.jpeg',bg:'from-amber-100 to-orange-100',sizes:'3–10'},
+  {id:4,name:'Lal Chunri Mata Poshak Set',cat:'mata',price:1199,old:null,tag:'Navratri',image:'images/product-4.jpeg',bg:'from-red-100 to-rose-100',sizes:'4–12'},
+  {id:5,name:'Moti Kundan Pearl Poshak',cat:'gopal',price:999,old:1299,tag:'Premium',image:'images/product-5.jpeg',bg:'from-violet-100 to-purple-100',sizes:'0–6'},
+  {id:6,name:'Vrindavan Green Banarasi Set',cat:'radha',price:1799,old:2199,tag:'Handloom',image:'images/product-6.jpeg',bg:'from-lime-100 to-emerald-100',sizes:'3–8'},
+  {id:7,name:'Mayur Pankh Holi Poshak',cat:'gopal',price:749,old:949,tag:'Festive',image:'images/product-7.jpeg',bg:'from-fuchsia-100 to-sky-100',sizes:'0–8'},
+  {id:8,name:'Modak Motif Ganpati Poshak',cat:'ganesh',price:899,old:null,tag:'Chaturthi',image:'images/product-8.jpeg',bg:'from-yellow-100 to-red-100',sizes:'3–12'},
 ];
 const INR = n => '₹' + n.toLocaleString('en-IN');
 
 function dressHTML(p){
-  return `<div class="dress">
-    <div class="top" style="background:${p.top}"></div>
-    <div class="skirt" style="background:${p.skirt}"><div class="lace"></div></div>
-    <div class="gem" style="left:51px;top:12px"></div>
-    <div class="gem" style="left:38px;top:26px;width:6px;height:6px"></div>
-    <div class="gem" style="left:66px;top:26px;width:6px;height:6px"></div>
-    <div class="gem" style="left:30px;top:100px"></div>
-    <div class="gem" style="left:72px;top:100px"></div>
-  </div>`;
+  return `<div class="w-full h-full flex items-center justify-center p-4"><img src="${p.image}" alt="${p.name}" class="w-full h-full object-contain rounded-2xl drop-shadow-xl" loading="lazy"></div>`;
 }
 function render(filter='all'){
   const grid=document.getElementById('grid');
