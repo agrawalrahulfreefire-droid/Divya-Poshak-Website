@@ -3,638 +3,219 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Divya Poshak — Divine Attire for Your Deities</title>
+<meta name="description" content="Divya Poshak — premium traditional poshak and divine attire for Laddu Gopal, Radha Krishna, Ganesh Ji and Mata Rani.">
+<meta name="keywords" content="Divya Poshak, Laddu Gopal Poshak, Thakur Ji Poshak, Radha Krishna Poshak, Ganesh Ji Dress, Mata Rani Poshak">
+<title>Divya Poshak | Divine Attire for Your Deities</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      fontFamily: {
-        serif: ['"Cormorant Garamond"', 'serif'],
-        sans: ['Jost', 'sans-serif'],
-      },
-      colors: {
-        maroon: { 900:'#3b0a12', 800:'#521019', 700:'#6e1622', 600:'#8a1c2b' },
-        saffron: { 500:'#e8862b', 400:'#f2a351', 300:'#f7c27f' },
-        gold: { 600:'#b8891f', 500:'#d4a733', 400:'#e6c05a', 300:'#f3dc9a', 200:'#faefd0' },
-        cream: '#fdf8ee',
-      }
-    }
-  }
-}
-</script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --gold:#d4a733;
-    --maroon:#521019;
-  }
-  html{scroll-behavior:smooth}
-  body{font-family:'Jost',sans-serif;background:#fdf8ee;color:#3b0a12;overflow-x:hidden}
-  h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif}
-
-  /* Decorative pattern */
-  .pattern-bg{
-    background-color:#fdf8ee;
-    background-image:
-      radial-gradient(circle at 25% 25%, rgba(212,167,51,.08) 0 2px, transparent 3px),
-      radial-gradient(circle at 75% 75%, rgba(212,167,51,.08) 0 2px, transparent 3px);
-    background-size:48px 48px;
-  }
-  .mandala-bg{
-    background-image:
-      repeating-radial-gradient(circle at 50% 50%, transparent 0 18px, rgba(255,255,255,.035) 18px 19px),
-      repeating-conic-gradient(from 0deg, rgba(255,255,255,.03) 0deg 6deg, transparent 6deg 12deg);
-  }
-
-  .gold-text{
-    background:linear-gradient(120deg,#b8891f 0%,#f3dc9a 35%,#d4a733 55%,#f7e6b0 75%,#b8891f 100%);
-    -webkit-background-clip:text;background-clip:text;color:transparent;
-    background-size:200% auto;animation:shimmer 6s linear infinite;
-  }
-  @keyframes shimmer{to{background-position:200% center}}
-
-  .gold-border{
-    border:1px solid transparent;
-    background:linear-gradient(#fdf8ee,#fdf8ee) padding-box,
-               linear-gradient(135deg,#b8891f,#f3dc9a,#d4a733) border-box;
-  }
-
-  /* Ornamental divider */
-  .divider{display:flex;align-items:center;justify-content:center;gap:14px}
-  .divider::before,.divider::after{content:'';height:1px;width:70px;background:linear-gradient(90deg,transparent,#d4a733)}
-  .divider::after{background:linear-gradient(90deg,#d4a733,transparent)}
-
-  /* Floating diya animation */
-  @keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-14px) rotate(2deg)}}
-  @keyframes flicker{0%,100%{transform:scaleY(1) scaleX(1);opacity:1}50%{transform:scaleY(1.15) scaleX(.9);opacity:.85}}
-  .float{animation:float 6s ease-in-out infinite}
-  .flame{animation:flicker 1.4s ease-in-out infinite;transform-origin:bottom center}
-
-  /* Product card */
-  .card{transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
-  .card:hover{transform:translateY(-8px);box-shadow:0 30px 60px -20px rgba(82,16,25,.35)}
-  .card .visual{transition:transform .7s ease}
-  .card:hover .visual{transform:scale(1.06)}
-  .card .quick{transform:translateY(110%);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
-  .card:hover .quick{transform:translateY(0)}
-
-  /* Dress silhouette (CSS art) */
-  .dress{
-    position:relative;width:110px;height:150px;margin:0 auto;
-    filter:drop-shadow(0 18px 20px rgba(0,0,0,.25));
-  }
-  .dress .top{position:absolute;left:50%;top:0;transform:translateX(-50%);width:56px;height:52px;border-radius:14px 14px 4px 4px;}
-  .dress .skirt{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:110px;height:104px;border-radius:40% 40% 50% 50% / 20% 20% 40% 40%;clip-path:polygon(28% 0,72% 0,100% 100%,0 100%)}
-  .dress .lace{position:absolute;left:0;right:0;bottom:0;height:14px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.55) 0 3px,transparent 3px 8px);opacity:.8}
-  .dress .gem{position:absolute;width:8px;height:8px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,#f3dc9a 40%,#b8891f);box-shadow:0 0 6px rgba(255,255,255,.8)}
-
-  /* reveal */
-  .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
-  .reveal.in{opacity:1;transform:none}
-
-  /* marquee */
-  @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-  .marquee{animation:marquee 30s linear infinite}
-
-  /* cart drawer */
-  .drawer{transform:translateX(100%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
-  .drawer.open{transform:translateX(0)}
-
-  .btn-gold{background:linear-gradient(135deg,#b8891f,#e6c05a 50%,#b8891f);background-size:200% auto;transition:background-position .5s,transform .3s,box-shadow .3s;color:#3b0a12}
-  .btn-gold:hover{background-position:right center;transform:translateY(-2px);box-shadow:0 12px 30px -8px rgba(212,167,51,.7)}
-
-  .chip{transition:all .3s}
-  .chip.active{background:#521019;color:#f3dc9a;border-color:#521019}
-
-  ::-webkit-scrollbar{width:8px}
-  ::-webkit-scrollbar-track{background:#fdf8ee}
-  ::-webkit-scrollbar-thumb{background:#d4a733;border-radius:8px}
-
-  .toast{transform:translateY(120%);opacity:0;transition:all .4s}
-  .toast.show{transform:translateY(0);opacity:1}
+:root{--maroon:#4b0d18;--maroon2:#741c2a;--gold:#d4a733;--gold2:#f2d98b;--cream:#fffaf0;--ink:#321018}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Jost,sans-serif}
+h1,h2,h3,h4,.serif{font-family:"Cormorant Garamond",serif}
+.gold{background:linear-gradient(120deg,#b8891f,#f5dfa0,#d4a733,#fff0b9,#b8891f);background-size:220% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 7s linear infinite}
+@keyframes shine{to{background-position:220% center}}
+.hero{background:radial-gradient(circle at 80% 20%,rgba(232,134,43,.35),transparent 28%),radial-gradient(circle at 20% 80%,rgba(212,167,51,.2),transparent 30%),linear-gradient(135deg,#3b0710,#741c2a 55%,#25040b)}
+.pattern{background-image:radial-gradient(circle,rgba(212,167,51,.12) 1px,transparent 1px);background-size:30px 30px}
+.card{transition:.35s}.card:hover{transform:translateY(-8px);box-shadow:0 25px 55px rgba(75,13,24,.16)}
+.btn{transition:.3s}.btn:hover{transform:translateY(-2px)}
+.product-img{height:260px;display:flex;align-items:center;justify-content:center;font-size:82px}
+.reveal{opacity:0;transform:translateY(22px);transition:.7s}.reveal.show{opacity:1;transform:none}
+.mobile-menu{display:none}.mobile-menu.open{display:block}
+.whatsapp{position:fixed;right:20px;bottom:20px;z-index:50}
+.toast{display:none}.toast.show{display:block}
+@media(max-width:768px){.desktop-nav{display:none}.hero-title{font-size:3.2rem}.product-img{height:220px}}
 </style>
 </head>
-<body class="pattern-bg">
+<body>
 
-<!-- Top bar -->
-<div class="bg-maroon-900 text-gold-300 text-xs tracking-widest uppercase overflow-hidden">
-  <div class="flex whitespace-nowrap marquee py-2">
-    <span class="px-8">✦ Free shipping on orders above ₹999</span><span class="px-8">✦ Handcrafted with devotion in Vrindavan</span><span class="px-8">✦ Janmashtami Collection now live</span><span class="px-8">✦ Custom sizes for every idol</span>
-    <span class="px-8">✦ Free shipping on orders above ₹999</span><span class="px-8">✦ Handcrafted with devotion in Vrindavan</span><span class="px-8">✦ Janmashtami Collection now live</span><span class="px-8">✦ Custom sizes for every idol</span>
-  </div>
+<!-- TOP BAR -->
+<div class="bg-[#3b0710] text-[#f3dc9a] text-xs text-center tracking-widest uppercase py-2 px-4">
+  ✦ Premium Divine Wear &nbsp; • &nbsp; Easy WhatsApp Enquiry &nbsp; • &nbsp; Custom Sizes Available
 </div>
 
-<!-- Navbar -->
-<header id="nav" class="sticky top-0 z-40 transition-all duration-300 bg-cream/80 backdrop-blur-md border-b border-gold-400/30">
-  <nav class="max-w-7xl mx-auto px-5 lg:px-8 h-20 flex items-center justify-between">
-    <a href="#" class="flex items-center gap-3">
-      <div class="w-11 h-11 rounded-full bg-gradient-to-br from-maroon-700 to-maroon-900 flex items-center justify-center shadow-lg shadow-maroon-900/30 ring-2 ring-gold-400/60">
-        <span class="serif text-gold-300 text-2xl font-semibold leading-none">ॐ</span>
-      </div>
-      <div class="leading-tight">
-        <div class="serif text-2xl font-semibold text-maroon-900 tracking-wide">Divya <span class="gold-text">Poshak</span></div>
-        <div class="text-[10px] uppercase tracking-[.3em] text-maroon-700/70">Divine Attire</div>
-      </div>
-    </a>
-    <ul class="hidden md:flex items-center gap-9 text-sm tracking-wider uppercase text-maroon-800">
-      <li><a href="#collections" class="hover:text-gold-600 transition">Collections</a></li>
-      <li><a href="#shop" class="hover:text-gold-600 transition">Shop</a></li>
-      <li><a href="#craft" class="hover:text-gold-600 transition">Our Craft</a></li>
-      <li><a href="#sizes" class="hover:text-gold-600 transition">Size Guide</a></li>
-      <li><a href="#stories" class="hover:text-gold-600 transition">Devotees</a></li>
-    </ul>
-    <div class="flex items-center gap-3">
-      <button class="hidden sm:flex w-10 h-10 items-center justify-center rounded-full hover:bg-gold-200 transition" aria-label="Search">
-        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-      </button>
-      <button id="cartBtn" class="relative w-10 h-10 flex items-center justify-center rounded-full hover:bg-gold-200 transition" aria-label="Cart">
-        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg>
-        <span id="cartCount" class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-maroon-700 text-gold-300 text-[11px] flex items-center justify-center font-semibold">0</span>
-      </button>
-      <button id="menuBtn" class="md:hidden w-10 h-10 flex items-center justify-center" aria-label="Menu">
-        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
-    </div>
-  </nav>
-  <div id="mobileMenu" class="md:hidden hidden border-t border-gold-400/30 bg-cream">
-    <ul class="px-6 py-4 space-y-3 text-sm uppercase tracking-wider text-maroon-800">
-      <li><a href="#collections" class="block py-2">Collections</a></li>
-      <li><a href="#shop" class="block py-2">Shop</a></li>
-      <li><a href="#craft" class="block py-2">Our Craft</a></li>
-      <li><a href="#sizes" class="block py-2">Size Guide</a></li>
-      <li><a href="#stories" class="block py-2">Devotees</a></li>
-    </ul>
+<!-- NAVBAR -->
+<header class="sticky top-0 z-40 bg-[#fffaf0]/95 backdrop-blur border-b border-[#d4a733]/30">
+<nav class="max-w-7xl mx-auto px-5 lg:px-8 h-20 flex items-center justify-between">
+<a href="#home" class="flex items-center gap-3">
+  <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#741c2a] to-[#3b0710] ring-2 ring-[#d4a733]/70 flex items-center justify-center text-[#f3dc9a] text-2xl">ॐ</div>
+  <div><div class="serif text-2xl font-bold text-[#4b0d18]">Divya <span class="gold">Poshak</span></div><div class="text-[9px] tracking-[.3em] uppercase text-[#741c2a]/70">Divine Attire</div></div>
+</a>
+<div class="desktop-nav flex items-center gap-8 text-sm uppercase tracking-wider text-[#4b0d18]">
+  <a href="#home" class="hover:text-[#b8891f]">Home</a>
+  <a href="#collections" class="hover:text-[#b8891f]">Collections</a>
+  <a href="#shop" class="hover:text-[#b8891f]">Shop</a>
+  <a href="#about" class="hover:text-[#b8891f]">About</a>
+  <a href="#contact" class="hover:text-[#b8891f]">Contact</a>
+</div>
+<div class="flex items-center gap-2">
+  <a href="tel:+916396896794" class="hidden sm:flex btn px-4 py-2 rounded-full border border-[#d4a733] text-[#4b0d18] text-sm">Call</a>
+  <a href="https://wa.me/916396896794?text=Namaste%20Divya%20Poshak%2C%20mujhe%20product%20ke%20baare%20mein%20jankari%20chahiye." target="_blank" class="btn px-4 py-2 rounded-full bg-[#4b0d18] text-[#f3dc9a] text-sm">WhatsApp</a>
+  <button id="menuBtn" class="md:hidden text-2xl px-2">☰</button>
+</div>
+</nav>
+<div id="mobileMenu" class="mobile-menu md:hidden border-t border-[#d4a733]/30 bg-[#fffaf0] px-6 py-4">
+  <div class="grid gap-3 text-sm uppercase tracking-wider">
+    <a href="#home">Home</a><a href="#collections">Collections</a><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a>
   </div>
+</div>
 </header>
 
-<!-- Hero -->
-<section class="relative overflow-hidden">
-  <div class="absolute inset-0 bg-gradient-to-br from-maroon-900 via-maroon-800 to-[#2a0710] mandala-bg"></div>
-  <!-- glow -->
-  <div class="absolute -top-40 -right-40 w-[520px] h-[520px] rounded-full bg-saffron-500/25 blur-3xl"></div>
-  <div class="absolute -bottom-40 -left-32 w-[420px] h-[420px] rounded-full bg-gold-500/20 blur-3xl"></div>
-
-  <div class="relative max-w-7xl mx-auto px-5 lg:px-8 pt-16 pb-24 lg:pt-24 lg:pb-32 grid lg:grid-cols-2 gap-14 items-center">
-    <div class="text-center lg:text-left">
-      <p class="inline-flex items-center gap-2 text-gold-300 text-xs tracking-[.35em] uppercase mb-6 border border-gold-400/40 rounded-full px-5 py-2">
-        <span class="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse"></span> Janmashtami Edit 2025
-      </p>
-      <h1 class="serif text-5xl sm:text-6xl lg:text-7xl font-medium text-cream leading-[1.05]">
-        Adorn the Divine<br>in <em class="gold-text not-italic font-semibold">Handwoven</em> Grace
-      </h1>
-      <p class="mt-6 text-cream/75 text-lg max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
-        Exquisite poshak for Laddu Gopal, Radha-Krishna, Ganesh Ji and Mata Rani — embroidered with zari, pearls and prayers by artisan families of Vrindavan.
-      </p>
-      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-        <a href="#shop" class="btn-gold px-8 py-4 rounded-full text-sm uppercase tracking-widest font-semibold text-center">Explore Collection</a>
-        <a href="#sizes" class="px-8 py-4 rounded-full text-sm uppercase tracking-widest text-gold-300 border border-gold-400/50 hover:bg-gold-400/10 transition text-center">Find Your Size</a>
-      </div>
-      <div class="mt-12 grid grid-cols-3 gap-6 max-w-md mx-auto lg:mx-0 text-cream">
-        <div><div class="serif text-3xl font-semibold text-gold-300">25k+</div><div class="text-xs uppercase tracking-wider text-cream/60">Devotees</div></div>
-        <div><div class="serif text-3xl font-semibold text-gold-300">400+</div><div class="text-xs uppercase tracking-wider text-cream/60">Designs</div></div>
-        <div><div class="serif text-3xl font-semibold text-gold-300">1998</div><div class="text-xs uppercase tracking-wider text-cream/60">Since</div></div>
-      </div>
-    </div>
-
-    <!-- Hero visual -->
-    <div class="relative flex items-center justify-center">
-      <div class="relative w-[320px] h-[420px] sm:w-[380px] sm:h-[480px]">
-        <!-- arch -->
-        <div class="absolute inset-0 rounded-t-[200px] rounded-b-3xl gold-border" style="background:linear-gradient(#6e1622,#3b0a12) padding-box,linear-gradient(135deg,#b8891f,#f3dc9a,#d4a733) border-box;border-width:3px"></div>
-        <div class="absolute inset-4 rounded-t-[180px] rounded-b-2xl border border-gold-400/30"></div>
-        <!-- halo -->
-        <div class="absolute top-16 left-1/2 -translate-x-1/2 w-44 h-44 rounded-full bg-gradient-to-b from-gold-300/40 to-transparent blur-2xl"></div>
-        <!-- dress -->
-        <div class="absolute top-[22%] left-1/2 -translate-x-1/2 float">
-          <div class="dress" style="width:170px;height:230px">
-            <div class="top" style="width:86px;height:80px;background:linear-gradient(160deg,#f2a351,#c9531b)"></div>
-            <div class="skirt" style="width:170px;height:160px;background:linear-gradient(180deg,#e8862b 0%,#a83a1d 60%,#6e1622 100%)">
-              <div class="lace" style="height:22px"></div>
-            </div>
-            <div class="gem" style="left:78px;top:18px;width:12px;height:12px"></div>
-            <div class="gem" style="left:60px;top:40px"></div>
-            <div class="gem" style="left:98px;top:40px"></div>
-            <div class="gem" style="left:40px;top:120px"></div>
-            <div class="gem" style="left:120px;top:120px"></div>
-            <div class="gem" style="left:80px;top:150px"></div>
-          </div>
-          <!-- peacock feather -->
-          <div class="absolute -top-14 left-1/2 -translate-x-1/2 w-9 h-16 rounded-full bg-gradient-to-b from-teal-400 via-emerald-600 to-emerald-900 ring-2 ring-gold-400/60 shadow-lg" style="clip-path:ellipse(50% 50% at 50% 50%)"><div class="absolute inset-3 rounded-full bg-gradient-to-b from-sky-300 to-indigo-700"></div></div>
-        </div>
-        <!-- diyas -->
-        <div class="absolute bottom-6 left-8"><div class="relative"><div class="flame w-3 h-6 rounded-full bg-gradient-to-t from-saffron-500 to-yellow-200 mx-auto blur-[1px]"></div><div class="w-10 h-4 rounded-b-full bg-gradient-to-b from-gold-500 to-gold-600 -mt-1"></div></div></div>
-        <div class="absolute bottom-6 right-8"><div class="relative"><div class="flame w-3 h-6 rounded-full bg-gradient-to-t from-saffron-500 to-yellow-200 mx-auto blur-[1px]" style="animation-delay:.6s"></div><div class="w-10 h-4 rounded-b-full bg-gradient-to-b from-gold-500 to-gold-600 -mt-1"></div></div></div>
-        <!-- floating badge -->
-        <div class="absolute -left-6 top-1/2 bg-cream rounded-2xl px-4 py-3 shadow-2xl shadow-maroon-900/50 flex items-center gap-3 float" style="animation-delay:1.2s">
-          <div class="w-9 h-9 rounded-full bg-gold-200 flex items-center justify-center text-lg">🪷</div>
-          <div><div class="text-xs uppercase tracking-wider text-maroon-700/60">Handmade</div><div class="serif font-semibold text-maroon-900">Zari Work</div></div>
-        </div>
-        <div class="absolute -right-6 bottom-24 bg-cream rounded-2xl px-4 py-3 shadow-2xl shadow-maroon-900/50 flex items-center gap-3 float" style="animation-delay:2s">
-          <div class="flex -space-x-1 text-gold-500 text-sm">★★★★★</div>
-          <div class="text-xs text-maroon-800">4.9 · 6,200 reviews</div>
-        </div>
-      </div>
+<!-- HERO -->
+<section id="home" class="hero text-[#fffaf0] overflow-hidden">
+<div class="max-w-7xl mx-auto px-5 lg:px-8 py-20 lg:py-28 grid lg:grid-cols-2 gap-14 items-center">
+<div class="reveal">
+  <p class="inline-block border border-[#d4a733]/60 rounded-full px-5 py-2 text-xs uppercase tracking-[.3em] text-[#f3dc9a]">Divine Collection</p>
+  <h1 class="hero-title serif text-6xl lg:text-8xl leading-[.95] mt-7">Adorn the Divine in <span class="gold">Grace</span></h1>
+  <p class="mt-7 text-lg text-white/75 leading-relaxed max-w-xl">Premium poshak and traditional attire for Laddu Gopal, Radha Krishna, Ganesh Ji and Mata Rani — designed with devotion and made to look beautiful in every darshan.</p>
+  <div class="mt-9 flex flex-wrap gap-4">
+    <a href="#shop" class="btn bg-gradient-to-r from-[#b8891f] via-[#f2d98b] to-[#b8891f] text-[#3b0710] px-7 py-4 rounded-full font-semibold uppercase tracking-wider">Explore Collection</a>
+    <a href="https://wa.me/916396896794?text=Namaste%20Divya%20Poshak%2C%20mujhe%20latest%20collection%20dekhni%20hai." target="_blank" class="btn border border-[#f3dc9a]/60 px-7 py-4 rounded-full text-[#f3dc9a] uppercase tracking-wider">Enquire on WhatsApp</a>
+  </div>
+  <div class="mt-12 grid grid-cols-3 gap-5 max-w-md">
+    <div><div class="serif text-4xl text-[#f3dc9a]">Premium</div><div class="text-xs uppercase tracking-wider text-white/55">Finish</div></div>
+    <div><div class="serif text-4xl text-[#f3dc9a]">Custom</div><div class="text-xs uppercase tracking-wider text-white/55">Sizes</div></div>
+    <div><div class="serif text-4xl text-[#f3dc9a]">Direct</div><div class="text-xs uppercase tracking-wider text-white/55">Enquiry</div></div>
+  </div>
+</div>
+<div class="reveal flex justify-center">
+  <div class="relative w-full max-w-md aspect-[4/5] rounded-[45%_45%_24px_24px] border-[3px] border-[#d4a733] p-5 bg-gradient-to-b from-[#8d2737] to-[#3b0710] shadow-2xl">
+    <div class="absolute inset-8 rounded-[40%_40%_20px_20px] border border-[#f3dc9a]/30"></div>
+    <div class="absolute inset-0 flex flex-col items-center justify-center">
+      <div class="text-7xl mb-5">🪷</div><div class="text-8xl">👑</div>
+      <div class="serif text-4xl text-[#f3dc9a] mt-5">Divya Poshak</div>
+      <div class="uppercase tracking-[.35em] text-xs text-white/60 mt-2">Made with Shraddha</div>
     </div>
   </div>
-
-  <!-- wave -->
-  <svg class="absolute bottom-0 left-0 w-full text-cream" viewBox="0 0 1440 60" preserveAspectRatio="none" fill="currentColor"><path d="M0 60 C 360 0 1080 0 1440 60 Z"/></svg>
+</div>
+</div>
 </section>
 
-<!-- Collections -->
-<section id="collections" class="py-24">
-  <div class="max-w-7xl mx-auto px-5 lg:px-8">
-    <div class="text-center mb-14 reveal">
-      <div class="divider text-gold-500 text-xl">✦</div>
-      <h2 class="serif text-4xl sm:text-5xl font-medium mt-3">Shop by Deity</h2>
-      <p class="text-maroon-800/70 mt-3 max-w-xl mx-auto font-light">Each poshak is tailored to the sacred form it dresses — proportion, drape and colour chosen by tradition.</p>
-    </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <a href="#shop" data-cat="gopal" class="cat-card group relative rounded-3xl overflow-hidden h-72 reveal">
-        <div class="absolute inset-0 bg-gradient-to-br from-sky-700 via-indigo-800 to-maroon-900 mandala-bg group-hover:scale-105 transition duration-700"></div>
-        <div class="absolute inset-0 flex items-center justify-center text-7xl group-hover:-translate-y-3 transition duration-500 drop-shadow-2xl">🪈</div>
-        <div class="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
-          <h3 class="serif text-2xl text-cream font-semibold">Laddu Gopal</h3>
-          <p class="text-xs uppercase tracking-widest text-gold-300">Sizes 0 – 12</p>
-        </div>
-      </a>
-      <a href="#shop" data-cat="radha" class="cat-card group relative rounded-3xl overflow-hidden h-72 reveal" style="transition-delay:.1s">
-        <div class="absolute inset-0 bg-gradient-to-br from-pink-600 via-rose-800 to-maroon-900 mandala-bg group-hover:scale-105 transition duration-700"></div>
-        <div class="absolute inset-0 flex items-center justify-center text-7xl group-hover:-translate-y-3 transition duration-500 drop-shadow-2xl">🪷</div>
-        <div class="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
-          <h3 class="serif text-2xl text-cream font-semibold">Radha Krishna</h3>
-          <p class="text-xs uppercase tracking-widest text-gold-300">Jodi Sets</p>
-        </div>
-      </a>
-      <a href="#shop" data-cat="ganesh" class="cat-card group relative rounded-3xl overflow-hidden h-72 reveal" style="transition-delay:.2s">
-        <div class="absolute inset-0 bg-gradient-to-br from-saffron-500 via-orange-700 to-maroon-900 mandala-bg group-hover:scale-105 transition duration-700"></div>
-        <div class="absolute inset-0 flex items-center justify-center text-7xl group-hover:-translate-y-3 transition duration-500 drop-shadow-2xl">🐘</div>
-        <div class="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
-          <h3 class="serif text-2xl text-cream font-semibold">Ganesh Ji</h3>
-          <p class="text-xs uppercase tracking-widest text-gold-300">Dhoti & Angavastra</p>
-        </div>
-      </a>
-      <a href="#shop" data-cat="mata" class="cat-card group relative rounded-3xl overflow-hidden h-72 reveal" style="transition-delay:.3s">
-        <div class="absolute inset-0 bg-gradient-to-br from-red-600 via-maroon-700 to-maroon-900 mandala-bg group-hover:scale-105 transition duration-700"></div>
-        <div class="absolute inset-0 flex items-center justify-center text-7xl group-hover:-translate-y-3 transition duration-500 drop-shadow-2xl">🔱</div>
-        <div class="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
-          <h3 class="serif text-2xl text-cream font-semibold">Mata Rani</h3>
-          <p class="text-xs uppercase tracking-widest text-gold-300">Chunri & Lehenga</p>
-        </div>
-      </a>
-    </div>
-  </div>
+<!-- COLLECTIONS -->
+<section id="collections" class="pattern py-20">
+<div class="max-w-7xl mx-auto px-5 lg:px-8">
+<div class="text-center reveal"><p class="text-xs uppercase tracking-[.35em] text-[#b8891f]">Choose your collection</p><h2 class="serif text-5xl mt-2">Shop by Deity</h2><p class="max-w-2xl mx-auto mt-4 text-[#4b0d18]/70">Beautiful traditional collections made for different deities, occasions and sizes.</p></div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+  <a href="#shop" data-cat="gopal" class="card rounded-3xl overflow-hidden bg-gradient-to-br from-indigo-800 to-[#4b0d18] text-white p-7 min-h-72 flex flex-col justify-between reveal"><div class="text-7xl">🪈</div><div><h3 class="serif text-3xl">Laddu Gopal</h3><p class="text-xs uppercase tracking-widest text-[#f3dc9a] mt-1">Poshak • Mukut • Accessories</p></div></a>
+  <a href="#shop" data-cat="radha" class="card rounded-3xl overflow-hidden bg-gradient-to-br from-pink-700 to-[#4b0d18] text-white p-7 min-h-72 flex flex-col justify-between reveal"><div class="text-7xl">🪷</div><div><h3 class="serif text-3xl">Radha Krishna</h3><p class="text-xs uppercase tracking-widest text-[#f3dc9a] mt-1">Jodi Sets • Matching Wear</p></div></a>
+  <a href="#shop" data-cat="ganesh" class="card rounded-3xl overflow-hidden bg-gradient-to-br from-orange-600 to-[#4b0d18] text-white p-7 min-h-72 flex flex-col justify-between reveal"><div class="text-7xl">🐘</div><div><h3 class="serif text-3xl">Ganesh Ji</h3><p class="text-xs uppercase tracking-widest text-[#f3dc9a] mt-1">Dhoti • Angavastra</p></div></a>
+  <a href="#shop" data-cat="mata" class="card rounded-3xl overflow-hidden bg-gradient-to-br from-red-700 to-[#4b0d18] text-white p-7 min-h-72 flex flex-col justify-between reveal"><div class="text-7xl">🔱</div><div><h3 class="serif text-3xl">Mata Rani</h3><p class="text-xs uppercase tracking-widest text-[#f3dc9a] mt-1">Chunri • Lehenga • Sets</p></div></a>
+</div>
+</div>
 </section>
 
-<!-- Shop -->
-<section id="shop" class="py-20 bg-gradient-to-b from-cream via-gold-200/40 to-cream">
-  <div class="max-w-7xl mx-auto px-5 lg:px-8">
-    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10 reveal">
-      <div>
-        <p class="text-xs uppercase tracking-[.35em] text-gold-600">Curated for you</p>
-        <h2 class="serif text-4xl sm:text-5xl font-medium mt-2">Featured Poshak</h2>
-      </div>
-      <div id="filters" class="flex flex-wrap gap-2">
-        <button class="chip active px-5 py-2 rounded-full border border-maroon-800/30 text-sm" data-filter="all">All</button>
-        <button class="chip px-5 py-2 rounded-full border border-maroon-800/30 text-sm" data-filter="gopal">Laddu Gopal</button>
-        <button class="chip px-5 py-2 rounded-full border border-maroon-800/30 text-sm" data-filter="radha">Radha Krishna</button>
-        <button class="chip px-5 py-2 rounded-full border border-maroon-800/30 text-sm" data-filter="ganesh">Ganesh Ji</button>
-        <button class="chip px-5 py-2 rounded-full border border-maroon-800/30 text-sm" data-filter="mata">Mata Rani</button>
-      </div>
-    </div>
-    <div id="grid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7"></div>
-  </div>
+<!-- SHOP -->
+<section id="shop" class="py-20 bg-gradient-to-b from-[#fffaf0] via-[#f8edcf] to-[#fffaf0]">
+<div class="max-w-7xl mx-auto px-5 lg:px-8">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-5 reveal">
+<div><p class="text-xs uppercase tracking-[.35em] text-[#b8891f]">Featured collection</p><h2 class="serif text-5xl mt-2">Popular Poshak</h2></div>
+<div id="filters" class="flex flex-wrap gap-2">
+<button class="filter active px-4 py-2 rounded-full border border-[#4b0d18]/30 text-sm" data-filter="all">All</button>
+<button class="filter px-4 py-2 rounded-full border border-[#4b0d18]/30 text-sm" data-filter="gopal">Laddu Gopal</button>
+<button class="filter px-4 py-2 rounded-full border border-[#4b0d18]/30 text-sm" data-filter="radha">Radha Krishna</button>
+<button class="filter px-4 py-2 rounded-full border border-[#4b0d18]/30 text-sm" data-filter="ganesh">Ganesh Ji</button>
+<button class="filter px-4 py-2 rounded-full border border-[#4b0d18]/30 text-sm" data-filter="mata">Mata Rani</button>
+</div>
+</div>
+<div id="productGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7 mt-10"></div>
+</div>
 </section>
 
-<!-- Craft -->
-<section id="craft" class="py-24 relative overflow-hidden">
-  <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
-    <div class="relative reveal">
-      <div class="grid grid-cols-2 gap-4">
-        <div class="h-64 rounded-3xl bg-gradient-to-br from-gold-400 to-saffron-500 flex items-center justify-center text-6xl shadow-xl">🧵</div>
-        <div class="h-64 rounded-3xl bg-gradient-to-br from-maroon-700 to-maroon-900 flex items-center justify-center text-6xl shadow-xl mt-10">📿</div>
-        <div class="h-64 rounded-3xl bg-gradient-to-br from-emerald-600 to-teal-800 flex items-center justify-center text-6xl shadow-xl -mt-10">🪡</div>
-        <div class="h-64 rounded-3xl bg-gradient-to-br from-pink-500 to-rose-800 flex items-center justify-center text-6xl shadow-xl">✨</div>
-      </div>
-      <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-maroon-900 text-cream rounded-2xl px-6 py-4 shadow-2xl flex items-center gap-4">
-        <span class="serif text-4xl text-gold-300 font-semibold">27</span>
-        <span class="text-sm leading-tight text-cream/80">years of<br>sacred craftsmanship</span>
-      </div>
-    </div>
-    <div class="reveal">
-      <p class="text-xs uppercase tracking-[.35em] text-gold-600">Our Craft</p>
-      <h2 class="serif text-4xl sm:text-5xl font-medium mt-2 leading-tight">Stitched with Seva,<br>Finished with Shraddha</h2>
-      <p class="mt-6 text-maroon-800/75 font-light leading-relaxed">Every Divya Poshak begins in the lanes of Vrindavan, where our artisan families have dressed Thakur Ji for generations. We use pure silk, velvet and cotton bases, hand-embroidered with zari, gota-patti, kundan and moti — never glued, always stitched.</p>
-      <ul class="mt-8 space-y-5">
-        <li class="flex gap-4"><div class="w-11 h-11 shrink-0 rounded-full bg-gold-200 flex items-center justify-center text-xl">🌿</div><div><h4 class="font-medium">Skin-safe fabrics</h4><p class="text-sm text-maroon-800/70 font-light">Soft linings that never scratch metal or marble vigrahas.</p></div></li>
-        <li class="flex gap-4"><div class="w-11 h-11 shrink-0 rounded-full bg-gold-200 flex items-center justify-center text-xl">📏</div><div><h4 class="font-medium">True-to-size fitting</h4><p class="text-sm text-maroon-800/70 font-light">Cut to standard idol sizes 0–12 with custom tailoring available.</p></div></li>
-        <li class="flex gap-4"><div class="w-11 h-11 shrink-0 rounded-full bg-gold-200 flex items-center justify-center text-xl">🕉️</div><div><h4 class="font-medium">Blessed before dispatch</h4><p class="text-sm text-maroon-800/70 font-light">Each order is offered at Banke Bihari Ji before it reaches your home.</p></div></li>
-      </ul>
-      <a href="#shop" class="inline-block mt-10 btn-gold px-8 py-4 rounded-full text-sm uppercase tracking-widest font-semibold">Discover the Collection</a>
-    </div>
-  </div>
+<!-- ABOUT / CRAFT -->
+<section id="about" class="py-20">
+<div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
+<div class="grid grid-cols-2 gap-4 reveal">
+<div class="rounded-3xl min-h-60 bg-gradient-to-br from-[#f2d98b] to-[#d38b24] flex items-center justify-center text-7xl">🧵</div>
+<div class="rounded-3xl min-h-60 bg-gradient-to-br from-[#741c2a] to-[#3b0710] flex items-center justify-center text-7xl mt-8">📿</div>
+<div class="rounded-3xl min-h-60 bg-gradient-to-br from-emerald-600 to-teal-900 flex items-center justify-center text-7xl -mt-8">🪡</div>
+<div class="rounded-3xl min-h-60 bg-gradient-to-br from-pink-600 to-rose-900 flex items-center justify-center text-7xl">✨</div>
+</div>
+<div class="reveal">
+<p class="text-xs uppercase tracking-[.35em] text-[#b8891f]">About Divya Poshak</p>
+<h2 class="serif text-5xl leading-tight mt-2">Made for devotion. Designed for beauty.</h2>
+<p class="mt-6 leading-relaxed text-[#4b0d18]/75">Divya Poshak brings together traditional aesthetics and a premium presentation for divine attire. Our collections are designed to make daily puja, festivals and special darshan feel even more beautiful.</p>
+<div class="mt-8 space-y-5">
+<div class="flex gap-4"><div class="w-11 h-11 rounded-full bg-[#f8edcf] flex items-center justify-center">✦</div><div><h3 class="serif text-2xl">Elegant Designs</h3><p class="text-sm text-[#4b0d18]/65">Traditional colours, decorative details and festive styling.</p></div></div>
+<div class="flex gap-4"><div class="w-11 h-11 rounded-full bg-[#f8edcf] flex items-center justify-center">📏</div><div><h3 class="serif text-2xl">Size Assistance</h3><p class="text-sm text-[#4b0d18]/65">Contact us on WhatsApp for size guidance and custom requirements.</p></div></div>
+<div class="flex gap-4"><div class="w-11 h-11 rounded-full bg-[#f8edcf] flex items-center justify-center">💬</div><div><h3 class="serif text-2xl">Easy Enquiry</h3><p class="text-sm text-[#4b0d18]/65">Send your preferred design, deity and size directly on WhatsApp.</p></div></div>
+</div>
+</div>
+</div>
 </section>
 
-<!-- Size Guide -->
-<section id="sizes" class="py-24 bg-maroon-900 text-cream relative overflow-hidden">
-  <div class="absolute inset-0 mandala-bg opacity-60"></div>
-  <div class="absolute top-0 right-0 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl"></div>
-  <div class="relative max-w-7xl mx-auto px-5 lg:px-8">
-    <div class="text-center mb-12 reveal">
-      <div class="divider text-gold-400 text-xl">✦</div>
-      <h2 class="serif text-4xl sm:text-5xl font-medium mt-3">Laddu Gopal Size Guide</h2>
-      <p class="text-cream/70 mt-3 max-w-xl mx-auto font-light">Measure the height of your Thakur Ji from the base to the top of the head (without the mukut).</p>
-    </div>
-    <div class="grid lg:grid-cols-5 gap-10 items-center">
-      <div class="lg:col-span-2 reveal">
-        <div class="bg-cream/5 border border-gold-400/30 rounded-3xl p-8 backdrop-blur">
-          <label class="text-xs uppercase tracking-widest text-gold-300">Idol height (inches)</label>
-          <div class="mt-4 flex items-center gap-4">
-            <input id="heightRange" type="range" min="1.5" max="9" step="0.25" value="4" class="w-full accent-yellow-400">
-            <span id="heightVal" class="serif text-3xl font-semibold text-gold-300 w-16 text-right">4"</span>
-          </div>
-          <div class="mt-8 text-center p-6 rounded-2xl bg-gradient-to-br from-gold-500/20 to-transparent border border-gold-400/30">
-            <div class="text-xs uppercase tracking-widest text-cream/60">Recommended size</div>
-            <div id="sizeOut" class="serif text-6xl font-semibold gold-text mt-1">4</div>
-            <div id="sizeNote" class="text-sm text-cream/70 mt-2">Most popular home size</div>
-          </div>
-          <a href="#shop" class="mt-6 block text-center btn-gold py-3.5 rounded-full text-sm uppercase tracking-widest font-semibold">Shop Size <span id="sizeBtn">4</span></a>
-        </div>
-      </div>
-      <div class="lg:col-span-3 reveal overflow-x-auto">
-        <table class="w-full text-sm min-w-[480px]">
-          <thead><tr class="text-gold-300 uppercase tracking-widest text-xs border-b border-gold-400/30"><th class="text-left py-3">Size</th><th class="text-left py-3">Idol Height</th><th class="text-left py-3">Poshak Length</th><th class="text-left py-3">Best for</th></tr></thead>
-          <tbody id="sizeTable" class="text-cream/85">
-            <tr data-size="0" class="border-b border-cream/10 transition"><td class="py-3 font-medium">0</td><td>1.5" – 2"</td><td>2.5"</td><td>Travel / pocket Gopal</td></tr>
-            <tr data-size="1" class="border-b border-cream/10 transition"><td class="py-3 font-medium">1</td><td>2" – 2.5"</td><td>3.5"</td><td>Car dashboard</td></tr>
-            <tr data-size="2" class="border-b border-cream/10 transition"><td class="py-3 font-medium">2</td><td>2.5" – 3.5"</td><td>4.5"</td><td>Small mandir</td></tr>
-            <tr data-size="3" class="border-b border-cream/10 transition"><td class="py-3 font-medium">3</td><td>3.5" – 4"</td><td>5.5"</td><td>Home mandir</td></tr>
-            <tr data-size="4" class="border-b border-cream/10 transition"><td class="py-3 font-medium">4</td><td>4" – 5"</td><td>6.5"</td><td>Most popular</td></tr>
-            <tr data-size="5" class="border-b border-cream/10 transition"><td class="py-3 font-medium">5</td><td>5" – 6"</td><td>7.5"</td><td>Large home mandir</td></tr>
-            <tr data-size="6" class="border-b border-cream/10 transition"><td class="py-3 font-medium">6</td><td>6" – 7"</td><td>9"</td><td>Community mandir</td></tr>
-            <tr data-size="8" class="border-b border-cream/10 transition"><td class="py-3 font-medium">8</td><td>7" – 9"</td><td>11"</td><td>Temple</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
+<!-- HOW IT WORKS -->
+<section class="py-20 bg-[#4b0d18] text-[#fffaf0]">
+<div class="max-w-7xl mx-auto px-5 lg:px-8 text-center">
+<p class="text-xs uppercase tracking-[.35em] text-[#f3dc9a]">Simple & personal</p><h2 class="serif text-5xl mt-2">How to Order</h2>
+<div class="grid md:grid-cols-3 gap-8 mt-12">
+<div class="reveal"><div class="text-5xl">1️⃣</div><h3 class="serif text-3xl mt-4 text-[#f3dc9a]">Choose</h3><p class="text-white/65 mt-2">Select a collection or product you like.</p></div>
+<div class="reveal"><div class="text-5xl">2️⃣</div><h3 class="serif text-3xl mt-4 text-[#f3dc9a]">Message</h3><p class="text-white/65 mt-2">Send product name, deity and required size on WhatsApp.</p></div>
+<div class="reveal"><div class="text-5xl">3️⃣</div><h3 class="serif text-3xl mt-4 text-[#f3dc9a]">Confirm</h3><p class="text-white/65 mt-2">We help with availability, size and order details.</p></div>
+</div>
+<a href="https://wa.me/916396896794?text=Namaste%20Divya%20Poshak%2C%20main%20order%20karna%20chahta%2Fchahti%20hoon." target="_blank" class="btn inline-block mt-12 bg-gradient-to-r from-[#b8891f] via-[#f2d98b] to-[#b8891f] text-[#3b0710] px-8 py-4 rounded-full font-semibold uppercase tracking-wider">Start WhatsApp Enquiry</a>
+</div>
 </section>
 
-<!-- Festival banner -->
-<section class="py-20">
-  <div class="max-w-7xl mx-auto px-5 lg:px-8">
-    <div class="relative rounded-[2rem] overflow-hidden bg-gradient-to-r from-saffron-500 via-gold-500 to-saffron-500 p-10 lg:p-16 reveal">
-      <div class="absolute inset-0 mandala-bg"></div>
-      <div class="absolute -right-10 -top-10 text-[220px] opacity-20 select-none">🪔</div>
-      <div class="relative grid lg:grid-cols-3 gap-8 items-center">
-        <div class="lg:col-span-2">
-          <p class="text-xs uppercase tracking-[.35em] text-maroon-900/70">Festival Calendar</p>
-          <h2 class="serif text-4xl sm:text-5xl font-semibold text-maroon-900 mt-2">Janmashtami is in <span id="days">—</span> days</h2>
-          <p class="mt-4 text-maroon-900/80 max-w-lg font-light">Pre-order the Midnight Abhishek Poshak set — velvet, peacock zari and a matching mukut, bansuri & pagdi. Dispatches within 48 hours.</p>
-        </div>
-        <div class="flex lg:justify-end">
-          <div class="bg-maroon-900 text-cream rounded-3xl p-6 w-full max-w-xs shadow-2xl">
-            <div id="countdown" class="grid grid-cols-4 gap-2 text-center">
-              <div><div class="serif text-3xl font-semibold text-gold-300" data-cd="d">00</div><div class="text-[10px] uppercase tracking-widest text-cream/60">Days</div></div>
-              <div><div class="serif text-3xl font-semibold text-gold-300" data-cd="h">00</div><div class="text-[10px] uppercase tracking-widest text-cream/60">Hrs</div></div>
-              <div><div class="serif text-3xl font-semibold text-gold-300" data-cd="m">00</div><div class="text-[10px] uppercase tracking-widest text-cream/60">Min</div></div>
-              <div><div class="serif text-3xl font-semibold text-gold-300" data-cd="s">00</div><div class="text-[10px] uppercase tracking-widest text-cream/60">Sec</div></div>
-            </div>
-            <a href="#shop" class="mt-5 block text-center bg-gold-400 hover:bg-gold-300 text-maroon-900 py-3 rounded-full text-xs uppercase tracking-widest font-semibold transition">Pre-order Now</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- CONTACT -->
+<section id="contact" class="py-20 pattern">
+<div class="max-w-6xl mx-auto px-5 lg:px-8">
+<div class="text-center reveal"><p class="text-xs uppercase tracking-[.35em] text-[#b8891f]">Get in touch</p><h2 class="serif text-5xl mt-2">Contact Divya Poshak</h2><p class="mt-4 text-[#4b0d18]/65">For product details, sizes, availability and orders, contact us directly.</p></div>
+<div class="grid md:grid-cols-3 gap-6 mt-12">
+<a href="tel:+916396896794" class="card bg-white rounded-3xl p-8 text-center border border-[#d4a733]/25"><div class="text-4xl">📞</div><h3 class="serif text-2xl mt-4">Call / Mobile</h3><p class="mt-2">+91 63968 96794</p></a>
+<a href="mailto:agrawalrahulfreefire@gmail.com" class="card bg-white rounded-3xl p-8 text-center border border-[#d4a733]/25"><div class="text-4xl">✉️</div><h3 class="serif text-2xl mt-4">Email</h3><p class="mt-2 break-all">agrawalrahulfreefire@gmail.com</p></a>
+<div class="card bg-white rounded-3xl p-8 text-center border border-[#d4a733]/25"><div class="text-4xl">📍</div><h3 class="serif text-2xl mt-4">Address</h3><p class="mt-2">Kalindi Vihar, Agra, Uttar Pradesh – 282006</p></div>
+</div>
+<div class="text-center mt-10"><a href="https://wa.me/916396896794?text=Namaste%20Divya%20Poshak%2C%20mujhe%20product%20details%20chahiye." target="_blank" class="btn inline-block bg-[#25D366] text-white px-8 py-4 rounded-full font-semibold">💬 Chat on WhatsApp</a></div>
+</div>
 </section>
 
-<!-- Testimonials -->
-<section id="stories" class="py-20">
-  <div class="max-w-7xl mx-auto px-5 lg:px-8">
-    <div class="text-center mb-12 reveal">
-      <div class="divider text-gold-500 text-xl">✦</div>
-      <h2 class="serif text-4xl sm:text-5xl font-medium mt-3">Words from Devotees</h2>
-    </div>
-    <div class="grid md:grid-cols-3 gap-6">
-      <figure class="reveal bg-white/70 backdrop-blur rounded-3xl p-8 border border-gold-400/30 shadow-lg shadow-maroon-900/5">
-        <div class="text-gold-500 text-sm">★★★★★</div>
-        <blockquote class="serif text-xl mt-4 leading-relaxed italic text-maroon-900">"The zari work is finer than what I have seen in the Vrindavan bazaars. My Laddu Gopal looked like a little prince on Janmashtami."</blockquote>
-        <figcaption class="mt-6 flex items-center gap-3"><div class="w-11 h-11 rounded-full bg-gradient-to-br from-pink-400 to-rose-600 flex items-center justify-center text-cream font-semibold">M</div><div><div class="font-medium">Meera Sharma</div><div class="text-xs text-maroon-800/60">Jaipur</div></div></figcaption>
-      </figure>
-      <figure class="reveal bg-white/70 backdrop-blur rounded-3xl p-8 border border-gold-400/30 shadow-lg shadow-maroon-900/5" style="transition-delay:.15s">
-        <div class="text-gold-500 text-sm">★★★★★</div>
-        <blockquote class="serif text-xl mt-4 leading-relaxed italic text-maroon-900">"Ordered a size 6 Radha-Krishna jodi set for our society mandir. Perfect fit, and the colours haven't faded after a year of daily shringar."</blockquote>
-        <figcaption class="mt-6 flex items-center gap-3"><div class="w-11 h-11 rounded-full bg-gradient-to-br from-sky-400 to-indigo-600 flex items-center justify-center text-cream font-semibold">R</div><div><div class="font-medium">Rajesh Iyer</div><div class="text-xs text-maroon-800/60">Pune</div></div></figcaption>
-      </figure>
-      <figure class="reveal bg-white/70 backdrop-blur rounded-3xl p-8 border border-gold-400/30 shadow-lg shadow-maroon-900/5" style="transition-delay:.3s">
-        <div class="text-gold-500 text-sm">★★★★★</div>
-        <blockquote class="serif text-xl mt-4 leading-relaxed italic text-maroon-900">"Living in Toronto, I missed dressing Ganpati Bappa in proper attire. Divya Poshak shipped in a week with a little prasad inside. Heartfelt."</blockquote>
-        <figcaption class="mt-6 flex items-center gap-3"><div class="w-11 h-11 rounded-full bg-gradient-to-br from-saffron-400 to-orange-600 flex items-center justify-center text-cream font-semibold">A</div><div><div class="font-medium">Anjali Desai</div><div class="text-xs text-maroon-800/60">Toronto</div></div></figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- Newsletter -->
-<section class="py-20">
-  <div class="max-w-3xl mx-auto px-5 text-center reveal">
-    <div class="text-5xl">🪔</div>
-    <h2 class="serif text-4xl font-medium mt-4">Receive Festival Reminders & Shringar Tips</h2>
-    <p class="text-maroon-800/70 mt-3 font-light">Join 25,000 devotees. One thoughtful letter before every utsav — never spam.</p>
-    <form id="newsForm" class="mt-8 flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
-      <input type="email" required placeholder="Your email address" class="flex-1 px-6 py-4 rounded-full bg-white border border-gold-400/50 focus:outline-none focus:ring-2 focus:ring-gold-400 text-maroon-900">
-      <button class="btn-gold px-8 py-4 rounded-full text-sm uppercase tracking-widest font-semibold">Subscribe</button>
-    </form>
-    <p id="newsMsg" class="mt-4 text-sm text-emerald-700 h-5"></p>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-maroon-900 text-cream/80 pt-16 pb-8 relative overflow-hidden">
-  <div class="absolute inset-0 mandala-bg opacity-40"></div>
-  <div class="relative max-w-7xl mx-auto px-5 lg:px-8 grid md:grid-cols-4 gap-10">
-    <div class="md:col-span-1">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-gold-400 flex items-center justify-center text-maroon-900 serif text-xl font-bold">ॐ</div>
-        <div class="serif text-2xl font-semibold text-cream">Divya Poshak</div>
-      </div>
-      <p class="mt-4 text-sm font-light leading-relaxed">Handcrafted divine attire from Vrindavan, dressing deities in homes across 40 countries since 1998.</p>
-      <div class="mt-5 flex gap-3">
-        <a href="#" class="w-9 h-9 rounded-full border border-gold-400/40 flex items-center justify-center hover:bg-gold-400 hover:text-maroon-900 transition text-xs">IG</a>
-        <a href="#" class="w-9 h-9 rounded-full border border-gold-400/40 flex items-center justify-center hover:bg-gold-400 hover:text-maroon-900 transition text-xs">FB</a>
-        <a href="#" class="w-9 h-9 rounded-full border border-gold-400/40 flex items-center justify-center hover:bg-gold-400 hover:text-maroon-900 transition text-xs">YT</a>
-        <a href="#" class="w-9 h-9 rounded-full border border-gold-400/40 flex items-center justify-center hover:bg-gold-400 hover:text-maroon-900 transition text-xs">WA</a>
-      </div>
-    </div>
-    <div>
-      <h4 class="text-gold-300 uppercase tracking-widest text-xs mb-4">Shop</h4>
-      <ul class="space-y-2 text-sm font-light"><li><a href="#" class="hover:text-gold-300">Laddu Gopal Poshak</a></li><li><a href="#" class="hover:text-gold-300">Radha Krishna Sets</a></li><li><a href="#" class="hover:text-gold-300">Ganesh Ji Dhoti</a></li><li><a href="#" class="hover:text-gold-300">Mata Rani Chunri</a></li><li><a href="#" class="hover:text-gold-300">Mukut & Shringar</a></li></ul>
-    </div>
-    <div>
-      <h4 class="text-gold-300 uppercase tracking-widest text-xs mb-4">Help</h4>
-      <ul class="space-y-2 text-sm font-light"><li><a href="#sizes" class="hover:text-gold-300">Size Guide</a></li><li><a href="#" class="hover:text-gold-300">Custom Orders</a></li><li><a href="#" class="hover:text-gold-300">Shipping & Returns</a></li><li><a href="#" class="hover:text-gold-300">Care Instructions</a></li><li><a href="#" class="hover:text-gold-300">Contact Us</a></li></ul>
-    </div>
-    <div>
-      <h4 class="text-gold-300 uppercase tracking-widest text-xs mb-4">Visit</h4>
-      <p class="text-sm font-light leading-relaxed">Loi Bazaar, near Banke Bihari Mandir,<br>Vrindavan, Uttar Pradesh 281121</p>
-      <p class="text-sm font-light mt-3">+91 98765 43210<br>seva@divyaposhak.in</p>
-    </div>
-  </div>
-  <div class="relative max-w-7xl mx-auto px-5 lg:px-8 mt-12 pt-6 border-t border-cream/10 flex flex-col sm:flex-row justify-between gap-3 text-xs text-cream/50">
-    <span>© 2025 Divya Poshak. All rights reserved.</span>
-    <span class="serif italic text-gold-300/80">"Patram pushpam phalam toyam — offered with love."</span>
-  </div>
+<!-- FOOTER -->
+<footer class="bg-[#25040b] text-[#fffaf0] pt-14 pb-8">
+<div class="max-w-7xl mx-auto px-5 lg:px-8 grid md:grid-cols-3 gap-10">
+<div><div class="serif text-3xl">Divya <span class="text-[#f3dc9a]">Poshak</span></div><p class="mt-4 text-white/55 leading-relaxed">Divine attire for your deities — thoughtfully designed for beautiful darshan.</p></div>
+<div><h3 class="serif text-2xl text-[#f3dc9a]">Quick Links</h3><div class="grid gap-2 mt-4 text-white/65"><a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></div></div>
+<div><h3 class="serif text-2xl text-[#f3dc9a]">Contact</h3><p class="mt-4 text-white/65">+91 63968 96794<br>agrawalrahulfreefire@gmail.com<br>Kalindi Vihar, Agra, UP 282006</p></div>
+</div>
+<div class="max-w-7xl mx-auto px-5 lg:px-8 border-t border-white/10 mt-10 pt-6 text-center text-xs text-white/40">© 2026 Divya Poshak. All rights reserved.</div>
 </footer>
 
-<!-- Cart drawer -->
-<div id="overlay" class="fixed inset-0 bg-maroon-900/60 backdrop-blur-sm z-40 hidden"></div>
-<aside id="drawer" class="drawer fixed top-0 right-0 h-full w-full max-w-md bg-cream z-50 shadow-2xl flex flex-col">
-  <div class="p-6 border-b border-gold-400/30 flex items-center justify-between">
-    <h3 class="serif text-3xl font-semibold">Your Thali</h3>
-    <button id="closeCart" class="w-10 h-10 rounded-full hover:bg-gold-200 flex items-center justify-center">✕</button>
-  </div>
-  <div id="cartItems" class="flex-1 overflow-y-auto p-6 space-y-4"></div>
-  <div class="p-6 border-t border-gold-400/30 bg-white/60">
-    <div class="flex justify-between text-sm mb-1"><span>Subtotal</span><span id="subtotal">₹0</span></div>
-    <div class="flex justify-between text-sm mb-4 text-maroon-800/60"><span>Shipping</span><span id="shipping">—</span></div>
-    <div class="flex justify-between serif text-2xl font-semibold mb-5"><span>Total</span><span id="total">₹0</span></div>
-    <button id="checkout" class="w-full btn-gold py-4 rounded-full text-sm uppercase tracking-widest font-semibold">Proceed to Checkout</button>
-  </div>
-</aside>
-
-<div id="toast" class="toast fixed bottom-6 left-1/2 -translate-x-1/2 bg-maroon-900 text-cream px-6 py-3 rounded-full shadow-2xl text-sm z-50 flex items-center gap-2"><span class="text-gold-300">✦</span><span id="toastMsg">Added to cart</span></div>
+<!-- FLOATING WHATSAPP -->
+<a class="whatsapp btn w-14 h-14 rounded-full bg-[#25D366] text-white shadow-2xl flex items-center justify-center text-3xl" href="https://wa.me/916396896794?text=Namaste%20Divya%20Poshak%2C%20mujhe%20aapki%20collection%20ke%20baare%20mein%20jankari%20chahiye." target="_blank" aria-label="WhatsApp">◉</a>
 
 <script>
-/* ---------- Products ---------- */
-const products = [
-  {id:1,name:'Peacock Zari Velvet Poshak',cat:'gopal',price:849,old:1099,tag:'Bestseller',top:'linear-gradient(160deg,#14b8a6,#0f766e)',skirt:'linear-gradient(180deg,#2563eb,#1e3a8a 70%,#0f172a)',bg:'from-sky-100 to-indigo-100',sizes:'0–8'},
-  {id:2,name:'Gulabi Gota Patti Lehenga Set',cat:'radha',price:1499,old:1899,tag:'Jodi Set',top:'linear-gradient(160deg,#fb7185,#be123c)',skirt:'linear-gradient(180deg,#f472b6,#9d174d 70%,#500724)',bg:'from-pink-100 to-rose-100',sizes:'2–8'},
-  {id:3,name:'Kesari Silk Dhoti & Angavastra',cat:'ganesh',price:699,old:899,tag:'New',top:'linear-gradient(160deg,#fbbf24,#d97706)',skirt:'linear-gradient(180deg,#f59e0b,#c2410c 70%,#7c2d12)',bg:'from-amber-100 to-orange-100',sizes:'3–10'},
-  {id:4,name:'Lal Chunri Mata Poshak Set',cat:'mata',price:1199,old:null,tag:'Navratri',top:'linear-gradient(160deg,#ef4444,#991b1b)',skirt:'linear-gradient(180deg,#dc2626,#7f1d1d 70%,#450a0a)',bg:'from-red-100 to-rose-100',sizes:'4–12'},
-  {id:5,name:'Moti Kundan Pearl Poshak',cat:'gopal',price:999,old:1299,tag:'Premium',top:'linear-gradient(160deg,#fefce8,#e5e7eb)',skirt:'linear-gradient(180deg,#fdf4ff,#c4b5fd 70%,#6d28d9)',bg:'from-violet-100 to-purple-100',sizes:'0–6'},
-  {id:6,name:'Vrindavan Green Banarasi Set',cat:'radha',price:1799,old:2199,tag:'Handloom',top:'linear-gradient(160deg,#a3e635,#4d7c0f)',skirt:'linear-gradient(180deg,#22c55e,#166534 70%,#052e16)',bg:'from-lime-100 to-emerald-100',sizes:'3–8'},
-  {id:7,name:'Mayur Pankh Holi Poshak',cat:'gopal',price:749,old:949,tag:'Festive',top:'linear-gradient(160deg,#fde68a,#f97316)',skirt:'linear-gradient(180deg,#f472b6,#8b5cf6 50%,#0ea5e9)',bg:'from-fuchsia-100 to-sky-100',sizes:'0–8'},
-  {id:8,name:'Modak Motif Ganpati Poshak',cat:'ganesh',price:899,old:null,tag:'Chaturthi',top:'linear-gradient(160deg,#fca5a5,#dc2626)',skirt:'linear-gradient(180deg,#fbbf24,#b45309 70%,#78350f)',bg:'from-yellow-100 to-red-100',sizes:'3–12'},
+const products=[
+ {name:"Royal Gopal Poshak",cat:"gopal",price:"Enquire for Price",icon:"👑",desc:"Festive traditional poshak for Laddu Gopal."},
+ {name:"Floral Gopal Set",cat:"gopal",price:"Enquire for Price",icon:"🌸",desc:"Elegant floral styling for daily darshan."},
+ {name:"Radha Krishna Jodi Set",cat:"radha",price:"Enquire for Price",icon:"🪷",desc:"Coordinated attire for Radha Krishna."},
+ {name:"Festive Radha Dress",cat:"radha",price:"Enquire for Price",icon:"💮",desc:"Rich festive look with decorative detailing."},
+ {name:"Ganesh Ji Dhoti Set",cat:"ganesh",price:"Enquire for Price",icon:"🐘",desc:"Traditional dhoti and angavastra styling."},
+ {name:"Ganesh Ji Festive Wear",cat:"ganesh",price:"Enquire for Price",icon:"✨",desc:"Special occasion attire for Ganesh Ji."},
+ {name:"Mata Rani Chunri Set",cat:"mata",price:"Enquire for Price",icon:"🔱",desc:"Traditional chunri and festive set."},
+ {name:"Mata Rani Lehenga",cat:"mata",price:"Enquire for Price",icon:"🌺",desc:"Decorative lehenga styling for Mata Rani."}
 ];
-const INR = n => '₹' + n.toLocaleString('en-IN');
-
-function dressHTML(p){
-  return `<div class="dress">
-    <div class="top" style="background:${p.top}"></div>
-    <div class="skirt" style="background:${p.skirt}"><div class="lace"></div></div>
-    <div class="gem" style="left:51px;top:12px"></div>
-    <div class="gem" style="left:38px;top:26px;width:6px;height:6px"></div>
-    <div class="gem" style="left:66px;top:26px;width:6px;height:6px"></div>
-    <div class="gem" style="left:30px;top:100px"></div>
-    <div class="gem" style="left:72px;top:100px"></div>
-  </div>`;
-}
-function render(filter='all'){
-  const grid=document.getElementById('grid');
-  const list=filter==='all'?products:products.filter(p=>p.cat===filter);
-  grid.innerHTML=list.map((p,i)=>`
-  <article class="card bg-white rounded-3xl overflow-hidden border border-gold-400/20 shadow-md shadow-maroon-900/5 reveal in" style="transition-delay:${i*60}ms">
-    <div class="relative bg-gradient-to-br ${p.bg} h-64 flex items-center justify-center overflow-hidden">
-      <div class="absolute inset-0 mandala-bg opacity-70"></div>
-      <div class="visual relative">${dressHTML(p)}</div>
-      <span class="absolute top-4 left-4 text-[10px] uppercase tracking-widest bg-maroon-900 text-gold-300 px-3 py-1.5 rounded-full">${p.tag}</span>
-      <button class="wish absolute top-4 right-4 w-9 h-9 rounded-full bg-white/80 hover:bg-white flex items-center justify-center text-maroon-700 transition" data-id="${p.id}" aria-label="Wishlist">♡</button>
-      <button class="quick add absolute bottom-0 inset-x-0 bg-maroon-900 text-gold-300 py-3.5 text-xs uppercase tracking-widest font-semibold hover:bg-maroon-800" data-id="${p.id}">Add to Thali</button>
-    </div>
-    <div class="p-5">
-      <div class="text-[10px] uppercase tracking-widest text-gold-600">${{gopal:'Laddu Gopal',radha:'Radha Krishna',ganesh:'Ganesh Ji',mata:'Mata Rani'}[p.cat]} · Sizes ${p.sizes}</div>
-      <h3 class="serif text-xl font-semibold mt-1 leading-snug">${p.name}</h3>
-      <div class="mt-3 flex items-center justify-between">
-        <div class="flex items-baseline gap-2"><span class="font-semibold text-lg">${INR(p.price)}</span>${p.old?`<span class="text-sm text-maroon-800/40 line-through">${INR(p.old)}</span>`:''}</div>
-        <div class="text-gold-500 text-xs">★★★★★</div>
-      </div>
-    </div>
-  </article>`).join('');
+const grid=document.getElementById("productGrid");
+function render(filter="all"){
+ grid.innerHTML=products.filter(p=>filter==="all"||p.cat===filter).map(p=>{
+   const msg=encodeURIComponent(`Namaste Divya Poshak, mujhe "${p.name}" ke baare mein jankari chahiye. Size aur price batayein.`);
+   return `<article class="card bg-white rounded-3xl overflow-hidden border border-[#d4a733]/20 reveal show">
+     <div class="product-img bg-gradient-to-br from-[#f8edcf] via-[#fffaf0] to-[#ecd69a]">${p.icon}</div>
+     <div class="p-6"><div class="text-xs uppercase tracking-widest text-[#b8891f]">${p.cat==="gopal"?"Laddu Gopal":p.cat==="radha"?"Radha Krishna":p.cat==="ganesh"?"Ganesh Ji":"Mata Rani"}</div>
+     <h3 class="serif text-2xl mt-1">${p.name}</h3><p class="text-sm text-[#4b0d18]/60 mt-2">${p.desc}</p>
+     <div class="flex items-center justify-between gap-3 mt-5"><span class="font-semibold text-[#741c2a]">${p.price}</span><a class="btn text-xs uppercase tracking-wider bg-[#4b0d18] text-[#f3dc9a] px-4 py-3 rounded-full" target="_blank" href="https://wa.me/916396896794?text=${msg}">Enquire</a></div></div>
+   </article>`;
+ }).join("");
 }
 render();
-
-/* Filters */
-document.querySelectorAll('#filters .chip').forEach(b=>b.addEventListener('click',()=>{
-  document.querySelectorAll('#filters .chip').forEach(x=>x.classList.remove('active'));
-  b.classList.add('active');render(b.dataset.filter);
+document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{
+ document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active","bg-[#4b0d18]","text-[#f3dc9a]"));
+ btn.classList.add("active","bg-[#4b0d18]","text-[#f3dc9a]"); render(btn.dataset.filter);
 }));
-document.querySelectorAll('.cat-card').forEach(a=>a.addEventListener('click',()=>{
-  const f=a.dataset.cat;
-  document.querySelectorAll('#filters .chip').forEach(x=>x.classList.toggle('active',x.dataset.filter===f));
-  render(f);
-}));
-
-/* ---------- Cart ---------- */
-let cart=[];
-const drawer=document.getElementById('drawer'),overlay=document.getElementById('overlay');
-function openCart(){drawer.classList.add('open');overlay.classList.remove('hidden');document.body.style.overflow='hidden'}
-function closeCart(){drawer.classList.remove('open');overlay.classList.add('hidden');document.body.style.overflow=''}
-document.getElementById('cartBtn').onclick=openCart;
-document.getElementById('closeCart').onclick=closeCart;
-overlay.onclick=closeCart;
-
-function toast(msg){const t=document.getElementById('toast');document.getElementById('toastMsg').textContent=msg;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),2200)}
-
-document.addEventListener('click',e=>{
-  const add=e.target.closest('.add');
-  if(add){const p=products.find(x=>x.id==add.dataset.id);const ex=cart.find(x=>x.id===p.id);ex?ex.qty++:cart.push({...p,qty:1});updateCart();toast(`${p.name} added to your thali`);}
-  const w=e.target.closest('.wish');
-  if(w){w.textContent=w.textContent==='♡'?'♥':'♡';w.classList.toggle('text-rose-600');toast(w.textContent==='♥'?'Saved to wishlist':'Removed from wishlist')}
-  const q=e.target.closest('[data-q]');
-  if(q){const it=cart.find(x=>x.id==q.dataset.id);it.qty+=+q.dataset.q;if(it.qty<=0)cart=cart.filter(x=>x!==it);updateCart()}
-});
-function updateCart(){
-  const count=cart.reduce((a,b)=>a+b.qty,0);
-  document.getElementById('cartCount').textContent=count;
-  const box=document.getElementById('cartItems');
-  if(!cart.length){box.innerHTML=`<div class="text-center py-16 text-maroon-800/60"><div class="text-5xl mb-4">🪔</div><p class="serif text-2xl text-maroon-900">Your thali is empty</p><p class="text-sm mt-2 font-light">Add a poshak to begin the shringar.</p></div>`}
-  else box.innerHTML=cart.map(it=>`
-   <div class="flex gap-4 bg-white rounded-2xl p-3 border border-gold-400/20">
-     <div class="w-20 h-24 rounded-xl bg-gradient-to-br ${it.bg} flex items-center justify-center shrink-0 overflow-hidden"><div style="transform:scale(.45)">${dressHTML(it)}</div></div>
-     <div class="flex-1 min-w-0">
-       <div class="serif font-semibold leading-tight">${it.name}</div>
-       <div class="text-xs text-maroon-800/60 mt-1">Size 4 · ${INR(it.price)}</div>
-       <div class="mt-2 flex items-center gap-3">
-         <button data-q="-1" data-id="${it.id}" class="w-7 h-7 rounded-full border border-maroon-800/30 hover:bg-gold-200">−</button>
-         <span class="text-sm font-medium">${it.qty}</span>
-         <button data-q="1" data-id="${it.id}" class="w-7 h-7 rounded-full border border-maroon-800/30 hover:bg-gold-200">+</button>
-       </div>
-     </div>
-     <div class="font-semibold">${INR(it.price*it.qty)}</div>
-   </div>`).join('');
-  const sub=cart.reduce((a,b)=>a+b.price*b.qty,0);const ship=sub===0?0:sub>=999?0:79;
-  document.getElementById('subtotal').textContent=INR(sub);
-  document.getElementById('shipping').textContent=sub===0?'—':ship===0?'Free':INR(ship);
-  document.getElementById('total').textContent=INR(sub+ship);
-}
-updateCart();
-document.getElementById('checkout').onclick=()=>{if(!cart.length){toast('Your thali is empty');return}toast('Jai Shri Krishna! Proceeding to checkout…')};
-
-/* ---------- Size guide ---------- */
-const sizeMap=[[2,'0','Travel / pocket Gopal'],[2.5,'1','Fits car dashboard idols'],[3.5,'2','Small mandir'],[4,'3','Home mandir'],[5,'4','Most popular home size'],[6,'5','Large home mandir'],[7,'6','Community mandir'],[9,'8','Temple size']];
-const range=document.getElementById('heightRange');
-function updSize(){const h=+range.value;document.getElementById('heightVal').textContent=h+'"';const m=sizeMap.find(s=>h<=s[0])||sizeMap.at(-1);
-  document.getElementById('sizeOut').textContent=m[1];document.getElementById('sizeNote').textContent=m[2];document.getElementById('sizeBtn').textContent=m[1];
-  document.querySelectorAll('#sizeTable tr').forEach(tr=>{const on=tr.dataset.size===m[1];tr.classList.toggle('bg-gold-400/20',on);tr.classList.toggle('text-gold-300',on)})}
-range.addEventListener('input',updSize);updSize();
-
-/* ---------- Countdown ---------- */
-function nextJanmashtami(){const now=new Date();let d=new Date(now.getFullYear(),7,16,0,0,0);if(d<now)d=new Date(now.getFullYear()+1,7,16);return d}
-const target=nextJanmashtami();
-function tick(){const diff=Math.max(0,target-new Date());const d=Math.floor(diff/864e5),h=Math.floor(diff/36e5)%24,m=Math.floor(diff/6e4)%60,s=Math.floor(diff/1e3)%60;
-  document.getElementById('days').textContent=d;const p=n=>String(n).padStart(2,'0');
-  document.querySelector('[data-cd=d]').textContent=p(d);document.querySelector('[data-cd=h]').textContent=p(h);document.querySelector('[data-cd=m]').textContent=p(m);document.querySelector('[data-cd=s]').textContent=p(s)}
-tick();setInterval(tick,1000);
-
-/* ---------- Misc ---------- */
-document.getElementById('menuBtn').onclick=()=>document.getElementById('mobileMenu').classList.toggle('hidden');
-document.querySelectorAll('#mobileMenu a').forEach(a=>a.onclick=()=>document.getElementById('mobileMenu').classList.add('hidden'));
-document.getElementById('newsForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('newsMsg').textContent='🙏 Radhe Radhe! You are on the list.';e.target.reset()});
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('shadow-lg',window.scrollY>10)});
+document.querySelectorAll("[data-cat]").forEach(card=>card.addEventListener("click",()=>{setTimeout(()=>{const f=document.querySelector(`.filter[data-filter="${card.dataset.cat}"]`);if(f)f.click()},100)}));
+const menuBtn=document.getElementById("menuBtn"), mobileMenu=document.getElementById("mobileMenu");
+menuBtn.addEventListener("click",()=>mobileMenu.classList.toggle("open"));
+mobileMenu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>mobileMenu.classList.remove("open")));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.08});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
 </script>
 </body>
 </html>
